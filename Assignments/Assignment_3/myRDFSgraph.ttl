@@ -5,6 +5,8 @@ ex:giantPanda a ex:mammal ;
     rdfs:label "Giant panda"@en ;
     ex:nationalAnimalOf ex:china .
 
+ex:hasDiet rdfs:domain ex:animal .
+
 ex:koala a ex:Marsupial ;
     rdfs:label "Koala"@en ;
     ex:nativeOf ex:australia .
@@ -17,7 +19,8 @@ ex:tarantula rdfs:label "Tarantula"@en ;
     ex:livesIn ex:southAmerica .
 
 ex:whaleShark a ex:fish ;
-    rdfs:label "Whale shark"@en .
+    rdfs:label "Whale shark"@en ;
+    ex:hasDiet ex:plankton .
 
 ex:fish rdfs:subClassOf ex:animal .
 
@@ -27,4 +30,6 @@ ex:livesIn rdfs:domain ex:animal ;
 ex:nativeOf rdfs:subPropertyOf ex:livesIn .
 
 ex:mammal rdfs:subClassOf ex:animal .
+
+ex:animal a ex:Class .
 
